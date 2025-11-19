@@ -1,53 +1,54 @@
-# 📸 Photo Management App
-A clean and responsive React-based photo upload & gallery application built for an internship assignment.
-Users can upload photos, preview them before submission, view them in a gallery, and open full-sized details.
+📸 Photo Management App
 
-This project includes a simulated backend, session-based persistence, and enhanced user experience.
+A simple, clean, React-based photo upload and gallery application built for an internship assignment.
+Users can upload images with a title & description, preview them before upload, view them in a gallery, and see full-size details.
 
-# 🚀 Features
-## ✅ Core
+This project includes a simulated backend, session-based persistence, and improved UX.
 
-Upload photos with title & description
+🚀 Features
+✅ Core
 
-Live image preview before uploading
+Upload photo with title & description
 
-Responsive gallery with thumbnails
+Live preview before uploading
 
-Full-size photo details page
+Gallery grid with thumbnails
 
-Delete photo functionality
+Full-size photo view with details
 
-## 🔧 State & Backend
+Delete photo from gallery
 
-Photos persist on browser refresh
+🔧 State & Backend
 
-Photos reset when dev server restarts (simulated backend)
+Photos persist across browser refresh
+
+Photos reset when the dev server restarts (simulated backend behavior)
 
 Uses localStorage + sessionStorage logic
 
-No backend server required
+No real backend required
 
-## 🎨 UI/UX Enhancements
+🎨 UX Enhancements
 
-Modern dark theme
+Fullscreen responsive layout
 
-Smooth fade-in animation for preview
+Smooth fade-in animation for previews
 
-Fullscreen responsive page layout
+Clean dark theme styling
 
-Clean loading screen
+Loading screen while app initializes
 
-# 🛠️ Tech Stack
+🛠️ Tech Stack
 
 React + Vite
 
-React Router DOM
+React Router DOM (for navigation)
 
-Context API
+Context API (global state for photos)
 
-localStorage / sessionStorage
+localStorage/sessionStorage (lightweight simulated backend)
 
-# 📂 Project Structure
+📂 Project Structure
 src/
 ├── App.jsx
 ├── main.jsx
@@ -62,26 +63,42 @@ src/
 │   └── PhotoCard.jsx
 └── utils/
 
-# ▶️ Running the Project Locally
-## 1️⃣ Install dependencies
+▶️ Running the Project Locally
+1️⃣ Install dependencies
 npm install
 
-## 2️⃣ Start the development server
+2️⃣ Run the development server
 npm run dev
 
-## 3️⃣ Open in browser
+3️⃣ Open in browser
+
+Visit:
+
 http://localhost:5173
 
-# 📌 Simulated Backend Behavior
+📌 Simulated Backend Behavior
 
-This project mimics backend behavior using front-end storage logic:
+This project uses a session-based simulation instead of a real backend:
 
 Action	Result
 Browser Refresh	✔ Photos persist
-Close & Open Tab	✔ Photos persist
+Close & reopen tab	✔ Photos persist
 Restart Vite (npm run dev)	❌ Photos reset (new session)
 
+This matches real-world backend behavior during development.
 
-# 👨‍💻 Author
+📦 Optional Future Enhancements
+
+Cloudinary or Firebase image storage
+
+Drag & drop upload
+
+Editable photo details
+
+Toast notifications
+
+Light/Dark theme toggle
+
+👨‍💻 Author
 
 Sriram – React Developer Intern Assignment Submission
