@@ -1,12 +1,12 @@
-📸 Photo Management App
+# 📸 Photo Management App
 
 A simple, clean, React-based photo upload and gallery application built for an internship assignment.
 Users can upload images with a title & description, preview them before upload, view them in a gallery, and see full-size details.
 
 This project includes a simulated backend, session-based persistence, and improved UX.
 
-🚀 Features
-✅ Core
+# 🚀 Features
+## ✅ Core
 
 Upload photo with title & description
 
@@ -18,7 +18,7 @@ Full-size photo view with details
 
 Delete photo from gallery
 
-🔧 State & Backend
+## 🔧 State & Backend
 
 Photos persist across browser refresh
 
@@ -28,7 +28,7 @@ Uses localStorage + sessionStorage logic
 
 No real backend required
 
-🎨 UX Enhancements
+## 🎨 UX Enhancements
 
 Fullscreen responsive layout
 
@@ -38,7 +38,7 @@ Clean dark theme styling
 
 Loading screen while app initializes
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 React + Vite
 
@@ -48,7 +48,7 @@ Context API (global state for photos)
 
 localStorage/sessionStorage (lightweight simulated backend)
 
-📂 Project Structure
+# 📂 Project Structure
 src/
 ├── App.jsx
 ├── main.jsx
@@ -63,7 +63,7 @@ src/
 │   └── PhotoCard.jsx
 └── utils/
 
-▶️ Running the Project Locally
+# ▶️ Running the Project Locally
 1️⃣ Install dependencies
 npm install
 
@@ -76,7 +76,7 @@ Visit:
 
 http://localhost:5173
 
-📌 Simulated Backend Behavior
+# 📌 Simulated Backend Behavior
 
 This project uses a session-based simulation instead of a real backend:
 
@@ -85,20 +85,8 @@ Browser Refresh	✔ Photos persist
 Close & reopen tab	✔ Photos persist
 Restart Vite (npm run dev)	❌ Photos reset (new session)
 
-This matches real-world backend behavior during development.
-
-📦 Optional Future Enhancements
-
-Cloudinary or Firebase image storage
-
-Drag & drop upload
-
-Editable photo details
-
-Toast notifications
-
 Light/Dark theme toggle
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 Sriram – React Developer Intern Assignment Submission
