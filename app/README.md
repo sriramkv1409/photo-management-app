@@ -1,16 +1,104 @@
-# React + Vite
+📸 Photo Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, clean, React-based photo upload and gallery application built for an internship assignment.
+Users can upload images with a title & description, preview them before upload, view them in a gallery, and see full-size details.
 
-Currently, two official plugins are available:
+This project includes a simulated backend, session-based persistence, and improved UX.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+✅ Core
 
-## React Compiler
+Upload photo with title & description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Live preview before uploading
 
-## Expanding the ESLint configuration
+Gallery grid with thumbnails
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Full-size photo view with details
+
+Delete photo from gallery
+
+🔧 State & Backend
+
+Photos persist across browser refresh
+
+Photos reset when the dev server restarts (simulated backend behavior)
+
+Uses localStorage + sessionStorage logic
+
+No real backend required
+
+🎨 UX Enhancements
+
+Fullscreen responsive layout
+
+Smooth fade-in animation for previews
+
+Clean dark theme styling
+
+Loading screen while app initializes
+
+🛠️ Tech Stack
+
+React + Vite
+
+React Router DOM (for navigation)
+
+Context API (global state for photos)
+
+localStorage/sessionStorage (lightweight simulated backend)
+
+📂 Project Structure
+src/
+├── App.jsx
+├── main.jsx
+├── index.css
+├── context/
+│   └── PhotoContext.jsx
+├── pages/
+│   ├── UploadPage.jsx
+│   ├── GalleryPage.jsx
+│   └── PhotoDetailsPage.jsx
+├── components/
+│   └── PhotoCard.jsx
+└── utils/
+
+▶️ Running the Project Locally
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Run the development server
+npm run dev
+
+3️⃣ Open in browser
+
+Visit:
+
+http://localhost:5173
+
+📌 Simulated Backend Behavior
+
+This project uses a session-based simulation instead of a real backend:
+
+Action	Result
+Browser Refresh	✔ Photos persist
+Close & reopen tab	✔ Photos persist
+Restart Vite (npm run dev)	❌ Photos reset (new session)
+
+This matches real-world backend behavior during development.
+
+📦 Optional Future Enhancements
+
+Cloudinary or Firebase image storage
+
+Drag & drop upload
+
+Editable photo details
+
+Toast notifications
+
+Light/Dark theme toggle
+
+👨‍💻 Author
+
+Sriram – React Developer Intern Assignment Submission
